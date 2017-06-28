@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>导航菜单组件</title>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/zhangsilei/menu/master/src/menu.css" />
+    <link rel="stylesheet" href="./menu.css" />
     <style>
     * {
         margin: 0;
@@ -62,6 +62,18 @@
     .title {
         padding: 2% 7%;
         background: #eee;
+    }
+
+    .github {
+        cursor: pointer;
+        display: inline-block;
+        height: 40px;
+        margin-top: 10px;
+        padding: 0 15px;
+        background: #2DBAAC;
+        line-height: 40px;
+        color: #fff;
+        text-decoration: none;
     }
     
     .content {
@@ -150,6 +162,7 @@
                 <span class="dark">.js</span>
                 <div class="cf"></div>
             </h3>
+            <a href="https://github.com/zhangsilei/menu" class="github">View on GitHub</a>
         </div>
         <div class="content">
             <div class="preview">
@@ -358,8 +371,9 @@
             <div class="cf"></div>
         </div>
     </div>
-    <script src="https://raw.githubusercontent.com/zhangsilei/menu/master/dep/jquery-1.12.2.min.js"></script>
-    <script src="https://raw.githubusercontent.com/zhangsilei/menu/master/src/menu.js"></script>
+    <script src="./jquery-1.12.2.min.js"></script>
+    <script src="./fastclick.js"></script>
+    <script src="./menu.js"></script>
     <script>
         (function() {
             $(function() {
