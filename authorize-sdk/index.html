@@ -25,7 +25,7 @@
     <button class="fb">Facebook Login</button>
     <button class="gg">Google Login</button>
     <button class="gg">QQ Login</button>
-    <script src="./authorize-sdk.js"></script>
+    <script src="../dist/authorize-sdk.js"></script>
     <script>
         window.onload = function() {
             document.querySelector('.fb').onclick = function() {
@@ -41,7 +41,7 @@
             };
             document.querySelector('.gg').onclick = function() {
                 var ggAuth = authorize.init('Google', {
-                    client_id: '81555039836-5d77g80ig2ou2gc1fmsi127ain5292j1.apps.googleusercontent.com'
+                    client_id: '68029027430-skmgemjg78dj5buqh00qp9gv1q9j7hri.apps.googleusercontent.com'
                 });
                 ggAuth.login(this, function(userData) {
                     console.log(userData);
